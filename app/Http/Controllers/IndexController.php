@@ -4,11 +4,13 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Http\Requests;
+use Illuminate\Support\Facades\DB;
 
 class IndexController extends Controller
 {
     public function index()
     {
-        echo 234234;
+         $pdo = DB::connection()->getpdo();
+         dd($pdo);
     }
 }

@@ -11,7 +11,11 @@
 |
 */
 
+
+
 Route::group(['middleware' => ['web']], function () {
+
+    Route::get('/test', 'IndexController@index');
 
     Route::get('/', function () {
         return view('welcome');

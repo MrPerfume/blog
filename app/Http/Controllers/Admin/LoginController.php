@@ -34,8 +34,15 @@ class LoginController extends CommonController
         }else {
             //系统环境变量
            // dd($_SERVER);
+           // session(['user'=>null]);
             return view('admin.login');
         }
+    }
+
+    public function quit()
+    {
+        session(['user'=>null]);
+        return redirect('admin/login');
     }
 
     public function code()

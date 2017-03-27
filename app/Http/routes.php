@@ -21,6 +21,10 @@ Route::group(['middleware' => ['web']], function () {
         return view('welcome');
     });
 
+    Route::any('admin/index', 'Admin\IndexController@index');
+    Route::any('admin/info', 'Admin\IndexController@info');
+    Route::any('admin/crypt', 'Admin\LoginController@crypt');
+
     Route::any('admin/login', 'Admin\LoginController@login');
     Route::get('admin/code', 'Admin\LoginController@code');
     Route::get('admin/getcode', 'Admin\LoginController@getcode');

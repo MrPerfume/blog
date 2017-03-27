@@ -27,8 +27,9 @@ class LoginController extends CommonController
             }
 
             session(['user'=>$user]);
-            dd(session('user'));
-            echo 'ok';
+           // dd(session('user'));
+            //echo 'ok';
+            return redirect('admin/index');
 
         }else {
             //系统环境变量

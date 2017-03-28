@@ -13,7 +13,7 @@
 
 Route::group(['middleware' => ['web']], function () {
 
-    Route::get('/test', 'IndexController@index');
+
 
     Route::get('/', function () {
         return view('welcome');
@@ -29,4 +29,6 @@ Route::group(['middleware' => ['web','admin.login'],'prefix'=>'admin','namespace
     Route::get('info', 'IndexController@info');
     Route::get('quit', 'LoginController@quit');
     Route::any('pass', 'IndexController@pass');
+
+    Route::resource('category','CategoryController');
 });

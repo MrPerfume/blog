@@ -25,7 +25,7 @@
       <file leaf-file-name="IndexController.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Admin/IndexController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="726">
+            <state relative-caret-position="795">
               <caret line="51" column="54" lean-forward="true" selection-start-line="51" selection-start-column="54" selection-end-line="51" selection-end-column="54" />
               <folding>
                 <element signature="e#46#70#0#PHP" expanded="true" />
@@ -60,8 +60,21 @@
         <entry file="file://$PROJECT_DIR$/resources/views/admin/pass.blade.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="23">
-              <caret line="25" column="32" lean-forward="false" selection-start-line="25" selection-start-column="32" selection-end-line="25" selection-end-column="32" />
-              <folding />
+              <caret line="29" column="32" lean-forward="false" selection-start-line="29" selection-start-column="32" selection-end-line="29" selection-end-column="32" />
+              <folding>
+                <marker date="1490708585836" expanded="true" signature="744:1822" ph="..." />
+                <marker date="1490708585836" expanded="true" signature="779:1815" ph="..." />
+                <marker date="1490708585836" expanded="true" signature="836:1803" ph="..." />
+                <marker date="1490708585836" expanded="true" signature="856:1786" ph="..." />
+                <marker date="1490708585836" expanded="true" signature="873:1081" ph="..." />
+                <marker date="1490708585836" expanded="true" signature="960:1063" ph="..." />
+                <marker date="1490708585836" expanded="true" signature="1098:1293" ph="..." />
+                <marker date="1490708585836" expanded="true" signature="1173:1275" ph="..." />
+                <marker date="1490708585836" expanded="true" signature="1310:1517" ph="..." />
+                <marker date="1490708585836" expanded="true" signature="1386:1499" ph="..." />
+                <marker date="1490708585836" expanded="true" signature="1534:1765" ph="..." />
+                <marker date="1490708585836" expanded="true" signature="1581:1747" ph="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -391,12 +404,12 @@
       <workItem from="1490591114239" duration="93000" />
       <workItem from="1490616735996" duration="6923000" />
       <workItem from="1490634464286" duration="31000" />
-      <workItem from="1490707230440" duration="1121000" />
+      <workItem from="1490707230440" duration="1482000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="21397000" />
+    <option name="totallyTimeSpent" value="21758000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -876,14 +889,27 @@
     <entry file="file://$PROJECT_DIR$/resources/views/admin/pass.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="23">
-          <caret line="25" column="32" lean-forward="false" selection-start-line="25" selection-start-column="32" selection-end-line="25" selection-end-column="32" />
-          <folding />
+          <caret line="29" column="32" lean-forward="false" selection-start-line="29" selection-start-column="32" selection-end-line="29" selection-end-column="32" />
+          <folding>
+            <marker date="1490708585836" expanded="true" signature="744:1822" ph="..." />
+            <marker date="1490708585836" expanded="true" signature="779:1815" ph="..." />
+            <marker date="1490708585836" expanded="true" signature="836:1803" ph="..." />
+            <marker date="1490708585836" expanded="true" signature="856:1786" ph="..." />
+            <marker date="1490708585836" expanded="true" signature="873:1081" ph="..." />
+            <marker date="1490708585836" expanded="true" signature="960:1063" ph="..." />
+            <marker date="1490708585836" expanded="true" signature="1098:1293" ph="..." />
+            <marker date="1490708585836" expanded="true" signature="1173:1275" ph="..." />
+            <marker date="1490708585836" expanded="true" signature="1310:1517" ph="..." />
+            <marker date="1490708585836" expanded="true" signature="1386:1499" ph="..." />
+            <marker date="1490708585836" expanded="true" signature="1534:1765" ph="..." />
+            <marker date="1490708585836" expanded="true" signature="1581:1747" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Admin/IndexController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="726">
+        <state relative-caret-position="795">
           <caret line="51" column="54" lean-forward="true" selection-start-line="51" selection-start-column="54" selection-end-line="51" selection-end-column="54" />
           <folding>
             <element signature="e#46#70#0#PHP" expanded="true" />

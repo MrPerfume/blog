@@ -37,18 +37,39 @@ class CategoryController extends CommonController
         }
         return $data;
     }
-    
-    //post.admin/category
-    public function store()
-    {
-
-    }
-
 
     //get.admin/category/create   添加分类
     public function create()
     {
+        $data = Category::where('cate_pid',0)->get();
+        return view('admin/category/add',compact('data'));
+    }
 
+    //post.admin/category  添加分类提交
+    public function store()
+    {
+        $input = Input::except('_token');
+       // dd($input);
+        $rules = [
+            'cate_name'=>'required',
+        ];
+
+        $message = [
+            'cate_name.required'=>'分类名称不能为空！',
+        ];
+
+        $validator = Validator::make($input,$rules,$message);
+
+        if($validator->passes()){
+            $re = Category::create($input);
+            if($re){
+                return redirect('admin/category');
+            }else{
+                return back()->with('errors','数据填充失败，请稍后重试！');
+            }
+        }else{
+            return back()->withErrors($validator);
+        }
     }
 
     //get.admin/category/{category}

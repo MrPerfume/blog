@@ -73,6 +73,26 @@ class CategoryController extends CommonController
         }
     }
 
+    //get.admin/category/{category}/edit  编辑分类
+    public function edit($cate_id)
+    {
+        $field = Category::find($cate_id);
+        $data = Category::where('cate_pid',0)->get();
+        return view('admin.category.edit',compact('field','data'));
+    }
+
+    //put.admin/category/{category}    更新分类
+    public function update($cate_id)
+    {
+        $input = Input::except('_token','_method');
+        $re = Category::where('cate_id',$cate_id)->update($input);
+        if($re){
+            return redirect('admin/category');
+        }else{
+            return back()->with('errors','分类信息更新失败，请稍后重试！');
+    }
+    }
+
     //get.admin/category/{category}
     public function show()
     {
@@ -85,17 +105,9 @@ class CategoryController extends CommonController
 
     }
 
-    //put.admin/category/{category}
-    public function update()
-    {
 
-    }
 
-    //get.admin/category/{category}/edit
-    public function edit()
-    {
 
-    }
 
 
 }

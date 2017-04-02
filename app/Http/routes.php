@@ -13,8 +13,6 @@
 
 Route::group(['middleware' => ['web']], function () {
 
-
-
     Route::get('/', function () {
         return view('welcome');
     });
@@ -30,5 +28,7 @@ Route::group(['middleware' => ['web','admin.login'],'prefix'=>'admin','namespace
     Route::get('quit', 'LoginController@quit');
     Route::any('pass', 'IndexController@pass');
 
-    Route::resource('category','CategoryController');
+    Route::post('cate/changeorder', 'CategoryController@changeOrder');
+    Route::resource('category', 'CategoryController');
+
 });

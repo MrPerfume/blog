@@ -53,7 +53,7 @@
                 <th><i class="require">*</i>分类名称：</th>
                 <td>
                     <input type="text" name="cate_name">
-                    <span><i class="fa fa-exclamation-circle yellow"></i>分类名称必须填写</span>
+                 <span><i class="fa fa-exclamation-circle yellow"></i>分类名称必须填写</span>
                 </td>
             </tr>
             <tr>
